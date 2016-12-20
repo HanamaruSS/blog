@@ -2,12 +2,12 @@
 
 one:
   body: MyString
-  created: 2016-12-20 15:56:08
-  postid: 
-  userid: 
+  created: 2016-12-20 16:28:04
+  postid: 1
+  userid: 1
 
 two:
   body: MyString
-  created: 2016-12-20 15:56:08
-  postid: 
-  userid: 
+  created: 2016-12-20 16:28:04
+  postid: 1
+  userid: 1
