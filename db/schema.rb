@@ -10,10 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161220071011) do
+ActiveRecord::Schema.define(version: 20161220075608) do
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "body"
+    t.time     "created"
+    t.integer  "postid"
+    t.integer  "userid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "title"
+    t.string   "body"
+    t.time     "created"
+    t.integer  "userid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
-    t.string   "userid"
+    t.string   "username"
     t.string   "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
